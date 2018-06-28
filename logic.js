@@ -13,7 +13,10 @@ function createMarkers(response) {
 
     // for each airport, create a marker and bind a popup with the airport's name
     var airportMarker = L.marker([airport.lat, airport.lon])
-      .bindPopup("<h3>" + airport.name + "</h3>");
+      .bindPopup("<h3>" + airport.name + "</h3>", {
+        preferCanvas: true
+    })
+      ;
 
     // add the marker to the airportMarkers array
     airportMarkers.push(airportMarker);
