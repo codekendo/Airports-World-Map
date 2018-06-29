@@ -3,8 +3,8 @@ var url = "https://gist.githubusercontent.com/tdreyno/4278655/raw/7b0762c09b519f
 
 // Creating map object
 var myMap = L.map("map", {
-  center: [40.7, -73.95],
-  zoom: 4
+  center: [0, 0],
+  zoom: 3
 });
 
 // Adding tile layer to the map
